@@ -1,0 +1,9 @@
+<h1>Pagina de comentarios</h1>
+<app-comentarios-hijo (llamadaPadre)="reciveDato($event)"></app-comentarios-hijo>
+
+<p>Comentarios de la gente</p>
+<ul>
+    @for (comentario of comentarios; track comentario) {
+        <li>Anonimo: {{comentario}}</li>
+    }
+</ul>
